@@ -11,10 +11,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151015060418) do
+ActiveRecord::Schema.define(version: 20151015174307) do
 
   create_table "universities", force: :cascade do |t|
     t.string   "univ_name",  limit: 255
+    t.string   "unique",     limit: 255
+    t.string   "not",        limit: 255
+    t.string   "null",       limit: 255
     t.datetime "created_at",             null: false
     t.datetime "updated_at",             null: false
   end
